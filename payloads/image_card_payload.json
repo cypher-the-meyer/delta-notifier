@@ -1,0 +1,40 @@
+{
+  "type": "image_card",
+  "version": "1.0",
+  "description": "Card with embedded image for Google Chat webhook",
+  "payload": {
+    "cards": [
+      {
+        "header": {
+          "title": "{{title}}"
+        },
+        "sections": [
+          {
+            "widgets": [
+              {
+                "image": {
+                  "imageUrl": "{{imageUrl}}",
+                  "onClick": {
+                    "openLink": {
+                      "url": "{{imageLinkUrl}}"
+                    }
+                  }
+                }
+              },
+              {
+                "textParagraph": {
+                  "text": "{{caption}}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "priority": "low",
+    "source": "delta-notifier",
+    "encoding": "UTF-8"
+  }
+}

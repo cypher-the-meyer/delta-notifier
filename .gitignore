@@ -1,0 +1,13 @@
+# Secrets — never commit these
+.env
+credentials.json
+*.json.key
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+.venv/
+
+# Build output
+dist/

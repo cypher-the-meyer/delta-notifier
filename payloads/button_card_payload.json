@@ -1,0 +1,55 @@
+{
+  "type": "button_card",
+  "version": "1.0",
+  "description": "Card with interactive buttons for Google Chat webhook",
+  "payload": {
+    "cards": [
+      {
+        "header": {
+          "title": "{{title}}",
+          "subtitle": "{{subtitle}}"
+        },
+        "sections": [
+          {
+            "widgets": [
+              {
+                "textParagraph": {
+                  "text": "{{bodyText}}"
+                }
+              },
+              {
+                "buttons": [
+                  {
+                    "textButton": {
+                      "text": "{{primaryButtonLabel}}",
+                      "onClick": {
+                        "openLink": {
+                          "url": "{{primaryButtonUrl}}"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "textButton": {
+                      "text": "{{secondaryButtonLabel}}",
+                      "onClick": {
+                        "openLink": {
+                          "url": "{{secondaryButtonUrl}}"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "priority": "urgent",
+    "source": "delta-notifier",
+    "encoding": "UTF-8"
+  }
+}

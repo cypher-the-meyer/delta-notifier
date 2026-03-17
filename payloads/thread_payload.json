@@ -1,0 +1,17 @@
+{
+  "type": "thread",
+  "version": "1.0",
+  "description": "Threaded reply payload for Google Chat webhook",
+  "payload": {
+    "text": "{{message}}",
+    "thread": {
+      "name": "{{threadName}}"
+    }
+  },
+  "meta": {
+    "priority": "normal",
+    "source": "delta-notifier",
+    "encoding": "UTF-8",
+    "threadReply": true
+  }
+}

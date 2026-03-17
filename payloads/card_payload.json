@@ -1,0 +1,41 @@
+{
+  "type": "card",
+  "version": "1.0",
+  "description": "Card with header and sections for Google Chat webhook",
+  "payload": {
+    "cards": [
+      {
+        "header": {
+          "title": "{{title}}",
+          "subtitle": "{{subtitle}}",
+          "imageUrl": "{{headerImageUrl}}",
+          "imageStyle": "IMAGE"
+        },
+        "sections": [
+          {
+            "header": "{{sectionHeader}}",
+            "widgets": [
+              {
+                "keyValue": {
+                  "topLabel": "{{labelKey}}",
+                  "content": "{{labelValue}}",
+                  "contentMultiline": false
+                }
+              },
+              {
+                "textParagraph": {
+                  "text": "{{bodyText}}"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "priority": "high",
+    "source": "delta-notifier",
+    "encoding": "UTF-8"
+  }
+}

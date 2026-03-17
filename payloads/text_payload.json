@@ -1,0 +1,13 @@
+{
+  "type": "text",
+  "version": "1.0",
+  "description": "Plain text message payload for Google Chat webhook",
+  "payload": {
+    "text": "{{message}}"
+  },
+  "meta": {
+    "priority": "normal",
+    "source": "delta-notifier",
+    "encoding": "UTF-8"
+  }
+}
